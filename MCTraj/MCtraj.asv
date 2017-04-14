@@ -60,10 +60,12 @@ for n = 1: nSims
         x(c,:) = x(c - 1,:) + dx;
         y(c,:) = y(c - 1,:) + dy;
         
-        
-        if max(y(size(y,1),:)) < 0 %break from sim when highest trajectory is < 0
-            break
+        if max(y(length(y)))<
+            
         end
+%         if max(y(c)) < 0
+%             break
+%         end
     end
 end
 
